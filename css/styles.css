@@ -71,7 +71,7 @@ header {
     color: white;
     text-transform: uppercase;
 }
-.header-main .contact ul li a:hover, .contact ul li i:hover {
+.header-main .contact ul li a:hover, .header-main .contact ul li i:hover {
     color: red;
     transition: all 0.5s;
 }
@@ -353,6 +353,13 @@ h3:hover {
     padding: 10px 20px;
     background-color: rgb(32, 31, 31);
 }
+.footer-container .footer-container-top h2 {
+    margin-left: 30px;
+}
+.footer-container .footer-container-top i {
+    font-size: 20px;
+    margin-right: 6px;
+}
 /* -----footer-top-CONTACT----- */ 
 .footer-container .footer-container-top .contact {
     flex: 1;
@@ -380,6 +387,7 @@ h3:hover {
 }
 .footer-container .footer-container-top .support ul li {
     padding: 3px 0px;
+    color: white;
 }
 .footer-container .footer-container-top .support ul li a {
     color: white;
@@ -391,7 +399,8 @@ h3:hover {
     text-transform: uppercase;
     padding: 10px 0px;
 }
-.footer-container .footer-container-top .support ul li a:hover {
+.footer-container .footer-container-top .support ul li:hover a,
+.support ul li:hover i {
     color: red;
     transition: all .5s;
 }
@@ -404,6 +413,7 @@ h3:hover {
 }
 .footer-container .footer-container-top .introduce ul li {
     padding: 3px 0px;
+    color: white;
 }
 .footer-container .footer-container-top .introduce ul li a {
     color: white;
@@ -416,7 +426,8 @@ h3:hover {
     text-transform: uppercase;
     padding: 10px 0px;
 }
-.footer-container .footer-container-top .introduce ul li a:hover {
+.footer-container .footer-container-top .introduce ul li:hover a,
+.introduce ul li:hover i {
     color: red;
     transition: all .5s;
 }
