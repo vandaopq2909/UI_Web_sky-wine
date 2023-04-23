@@ -53,6 +53,10 @@ header {
     line-height: 30px;
     align-items: center;
     cursor: pointer;
+    transition: all .5s;
+}
+.header-main .search-bar ul li i:hover {
+    color: red;
 }
 .header-main .contact ul {
     display: flex;
