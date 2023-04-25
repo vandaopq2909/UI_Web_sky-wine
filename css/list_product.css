@@ -78,6 +78,15 @@
     cursor: pointer;
     transition: all .5s;
 }
+.right-content .next-list ul li:first-child {
+    background-color: rgb(255, 38, 38);
+}
+.right-content .next-list ul li:first-child:hover {
+    border: 1px solid black;
+}
+.right-content .next-list ul li:first-child:hover a {
+    color: black;
+}
 .right-content .next-list ul li:hover {
     border: 1px solid red;
 }
