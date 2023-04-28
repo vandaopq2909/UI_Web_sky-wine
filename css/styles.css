@@ -382,6 +382,9 @@ h3:hover {
     text-transform: uppercase;
     padding: 10px 0px;
 }
+.footer-container .footer-container-top .contact ul li:nth-child(2) a {
+    color: white;
+}
 /* -----footer-top-SUPPORT----- */
 .footer-container .footer-container-top .support {
     flex: 1;

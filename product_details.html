@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/sign_in.css">
-    <link rel="stylesheet" href="css/sign_up.css">
+    <link rel="stylesheet" href="css/product_details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />    
-    <title>Đăng Ký</title>
+    <title>Rượu Vang Ventisquero Reserva Cabernet Sauvignon</title>
     <link rel="shortcut icon" href="img/logos/header_logo.jpg" type="image/x-icon">
 </head>
 <body>
@@ -92,42 +91,98 @@
         </div>
     </header>
     <div class="page-main">
-        <div class="wrapper">
-            <form action="" id="form-sign-in">
-                <h1 class="form-heading">Đăng Ký</h1>
-                <div class="form-group">
-                    <i class="fa-regular fa-user"></i>
-                    <input type="text" class="form-input" placeholder="Tên đăng nhập">
+        <div class="content">
+            <div class="left-content">
+                <div class="big-img">
+                    <img src="img/wine_products/Wine_Ventisquero-reserva-cabernet-sauvignon.jpg" 
+                    alt="">
                 </div>
-                <div class="form-group">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="text" class="form-input" placeholder="Địa chỉ email">
+                <div class="small-img">
+                    <div class="images">
+                        <img src="img/wine_products/Wine_Ventisquero-reserva-cabernet-sauvignon.jpg" 
+                        class="img-border" onclick="showImg(this.src)" alt="">
+                    </div>
+                    <div class="images">
+                        <img src="img/wine_products/Wine_Ventisquero-reserva-cabernet-sauvignon_2.jpg" 
+                        class="" onclick="showImg(this.src)" alt="">
+                    </div>
+                    <div class="images">
+                        <img src="img/wine_products/Wine_Ventisquero-reserva-cabernet-sauvignon_3.jpg" 
+                        class="" onclick="showImg(this.src)" alt="">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <i class="fa-solid fa-key"></i>
-                    <input type="password" class="form-input" placeholder="Mật khẩu">
+                <script>
+                    
+                    let listImg = document.querySelectorAll('.images img');
+                    for (const imgCurrent of listImg) {
+                        function addBorder() {
+                            for (const imgCurrent of listImg) {
+                                imgCurrent.classList.remove('img-border');
+                            }
+                            imgCurrent.classList.add('img-border');
+                        }
+                        imgCurrent.addEventListener('click', addBorder);
+                    }    
+                    let bigImg = document.querySelector('.big-img img');
+                    function showImg(pic){
+                        bigImg.src = pic;
+                    }
+                </script>
+            </div>
+            <div class="right-content">
+                <h2>Rượu Vang Ventisquero Reserva Cabernet Sauvignon</h2>
+                <div class="price">
+                    <p>380.000đ</p>
                 </div>
-                <div class="form-group">
-                    <i class="fa-solid fa-key"></i>
-                    <input type="password" class="form-input" placeholder="Nhập lại mật khẩu">
+                <div class="info">
+                    <p>Thông tin sản phẩm: </p>
+                    <ul>
+                        <li>Xuất Xứ: Chile</li>
+                        <li>Giống nho: Cabernet Sauvignon</li>
+                        <li>Nồng độ: 13,5%</li>
+                        <li>Loại vang: vang đỏ</li>
+                        <li>Dung tích: 750ml</li>
+                    </ul>
                 </div>
-                <input type="submit" value="Đăng ký" class="form-submit">
-                <div class="login-other">
-                    <button id="login-gg">
-                        <a href="#"><img src="img/logos/logo_google.png" alt="">
-                            Đăng nhập bằng Google</a>
-                    </button>  
+                <div class="sale">
+                    <p><i class="fa-solid fa-gift"></i> Khuyến mãi đặc biệt</p>
+                    <ul>
+                        <li>Chiết khấu 5-10% khi mua từ 5-10 sản phẩm</li>
+                        <li>Nội thành TP.HCM: MIỄN PHÍ đơn hàng từ trên 500k trong giờ hành chính</li>
+                        <li>Khách hàng mua sỉ vui lòng liên hệ trực tiếp</li>
+                        <li>0327845877</li>
+                        <li>vandaopq@gmail.com</li>
+                    </ul>
                 </div>
-                <div class="login-other">
-                    <button id="login-fb">
-                        <a href="#"><img src="img/logos/logo_facebook.png" alt="">
-                            Đăng nhập bằng Facebook</a>                    
-                        </button>                    
+                <div class="add-to-cart">
+                    <div class="quatity">
+                        <input type="button" onclick="totalClick(-1)" value="-">
+                        <input type="text" id="totalClicks" value="1">
+                        <input type="button" onclick="totalClick(1)" value="+">
+
+                        <script>
+                            function totalClick(value) {
+                                let totalClicks = document.getElementById('totalClicks');
+                                let sumValue = parseInt(totalClicks.value) + value;
+                                totalClicks.value = sumValue;
+
+                                if(sumValue < 1)
+                                    totalClicks.value = 1;
+                            }
+                        </script>
+                    </div>
+                    <div class="button-box">
+                        <input type="button" value="Thêm Vào Giỏ Hàng">
+                        <input type="button" value="Mua Ngay">
+                    </div>
                 </div>
-                <div class="forget-pass">
-                    <span><a href="sign_in.html" id="sign-up">Đã có tài khoản? Đăng nhập</a> | <a href="index.html" id="forget-password">Về trang chủ?</a></span>
-                </div>    
-            </form>
+            </div>
+        </div>
+        <div class="desription-content">
+
+        </div>
+        <div class="similar-products">
+
         </div>
     </div>
 </body>
