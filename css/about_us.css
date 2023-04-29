@@ -1,22 +1,22 @@
 .page-main {
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: "Open Sans", sans-serif;
 }
 .page-main .banner img {
     width: 100%;
     height: 350px;
     object-fit: cover;
 }
-.page-main .info {
+.page-main .welcome {
     margin: auto;
     max-width: 1200px;
 }
-.page-main .info h1 {
+.page-main .welcome h1 {
     margin: 50px 0px;
     color: #ff9409;
     font-size: 50px;
 }
-.page-main .info p {
+.page-main .welcome p {
     color: #292828;
     text-align: justify;
     font-size: 20px;
@@ -72,5 +72,5 @@
 }
 .the-end p strong {
     color: red;
-    font-size: 22px;
+    font-size: 20px;
 }

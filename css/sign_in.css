@@ -105,6 +105,8 @@
 .forget-pass {
     text-align: end;
     margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
 }
 .forget-pass span a {
     color: #f5f5f5;

@@ -116,3 +116,30 @@
 .content .right-content .add-to-cart .button-box input:hover {
     background-color: #d26e4b;
 }
+/* description  content*/
+.description-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+.description-content>h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+.description-content .description h2, p {
+    margin-bottom: 20px;
+}
+/* similar  content*/
+.similar-products {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+.similar-products > h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
