@@ -22,7 +22,7 @@ header {
 }
 .header-main {
     background-color: black;
-    height: 100px;
+    height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,6 +31,8 @@ header {
 .header-main .header-logo img {
     height: 100px;
     width: 100%;
+    object-fit: cover;
+    object-position: 0 20px;
     cursor: pointer;
 }
 .header-main .search-bar ul li {
