@@ -1,0 +1,238 @@
+.page-main {
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+.page-main .cart-content {
+    display: flex;
+}
+/* left content */
+.cart-content .left-content {
+    flex: 1;
+    padding-top: 20px;
+    padding-right: 20px;
+    border-right: 1px solid black;
+    margin-bottom: 30px;
+}
+.cart-content .left-content .title-line {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.cart-content .left-content .title-line h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.cart-content .left-content .title-line h4:first-child {
+    text-align: left;
+    flex: 1;
+}
+.cart-content .left-content .title-line h4:nth-child(2) {
+    width: 110px;
+}
+.cart-content .left-content .title-line h4:nth-child(3) {
+    width: 130px;
+}
+.cart-content .left-content .title-line h4:last-child {
+    width: 110px;
+    text-align: right;
+}
+.cart-content .left-content .product-line {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.cart-content .left-content .product-line div {
+    text-align: center;
+}
+.cart-content .left-content .product-line .cancel p {
+    color: gray;
+    font-size: 30px;
+    padding-right: 2px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.cart-content .left-content .product-line .cancel p:hover {
+    color: black;
+}
+.cart-content .left-content .product-line .product {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    text-align: left;
+}
+.cart-content .left-content .product-line .product img {
+    width: 80px;
+    transition: all .3s;
+}
+.cart-content .left-content .product-line .product img:hover {
+    filter: opacity(80%);
+}
+.cart-content .left-content .product-line .product a p {
+    color: #306fab;
+    transition: all .3s;
+}
+.cart-content .left-content .product-line .product a:hover p {
+    color: #0693e3;
+}
+.cart-content .left-content .product-line .price {
+    width: 110px;
+}
+.cart-content .left-content .product-line .price p {
+    color: red;
+}
+.cart-content .left-content .product-line .quantity {
+    width: 130px;
+}
+.cart-content .left-content .product-line .quantity input {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.cart-content .left-content .product-line .quantity input:nth-child(1) {
+    background-color: #00000008;
+    outline: none;
+    transition: all .3s;
+}
+.cart-content .left-content .product-line .quantity input:nth-child(3) {
+    background-color: #00000008;
+    outline: none;
+    transition: all .3s;
+}
+.left-content .product-line .quantity input:nth-child(1):hover,
+.left-content .product-line .quantity input:nth-child(3):hover {
+    background-color: #6b6b6b4d;
+
+}
+.cart-content .left-content .product-line .provisional-price {
+    width: 110px;
+    text-align: right;
+}
+.cart-content .left-content .product-line .provisional-price p {
+    color: red;
+}
+.cart-content .left-content .button-other {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cart-content .left-content .button-other button {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.cart-content .left-content .button-other #continue-view {
+    background-color: white;
+    border: 2px solid #ff7600;
+    color: #ff7600;
+    transition: all .3s;
+}
+.cart-content .left-content .button-other #continue-view:hover {
+    background-color: #ff7600;
+    color: white;
+}
+.cart-content .left-content .button-other #updateCart {
+    background-color: #ff7600;
+    border: none;
+    color: white;
+    transition: all .3s;
+}
+.cart-content .left-content .button-other #updateCart:hover {
+    background-color: #c15a00;
+}
+/* right content */
+.cart-content .right-content {
+    flex: 1;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+.cart-content .right-content .title-line {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.cart-content .right-content .title-line h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: left;
+}
+.cart-content .right-content .provisional-price {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+.cart-content .right-content .provisional-price p:first-child {
+    flex: 1;
+}
+.cart-content .right-content .provisional-price p:last-child {
+    flex: 2;
+    text-align: right;
+    color: red;
+}
+.cart-content .right-content .final-price {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+.cart-content .right-content .final-price p:first-child {
+    flex: 1;
+}
+.cart-content .right-content .final-price p:last-child {
+    flex: 2;
+    text-align: right;
+    color: red;
+}
+.cart-content .right-content .pay-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cart-content .right-content .pay-button button {
+    width: 100%;
+    height: 40px;
+    background-color: #ff7600;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: all .3s;
+}
+.cart-content .right-content .pay-button button:hover {
+    background-color: #c15a00;
+}
+.cart-content .right-content .sticky-sale {
+    display: flex;
+    flex-direction: column;
+}
+.cart-content .right-content .sticky-sale p {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.cart-content .right-content .sticky-sale input {
+    margin-top: 20px;
+    height: 40px;
+}
+.cart-content .right-content .sticky-sale input[type="text"] {
+    padding: 20px;
+}
+.cart-content .right-content .sticky-sale input[type="button"] {
+    background-color: #f5f5f5;
+    border: 1px solid #bfbebe;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+}
+.cart-content .right-content .sticky-sale input[type="button"]:hover {
+    background-color: #d5d0d0;
+}

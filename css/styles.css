@@ -332,7 +332,7 @@ h3:hover {
     padding: 3px 0px;
 }
 .products li:hover .product-info a.product-name {
-    color: #ee9B00;
+    color: #0693e3;
 }
 .products li .product-info .product-price {
     text-align: center;

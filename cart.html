@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>Giỏ Hàng</title>
+    <link rel="shortcut icon" href="img/logos/header_logo_no_removebg.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+           <div class="header-main">
+                <div class="header-logo">
+                    <a href="index.html"><img src="img/logos/header_logo.png" alt="header_logo"></a>
+                </div>                
+                <div class="search-bar">
+                    <ul>
+                        <li><input type="text" placeholder="Nhập loại rượu bạn cần tìm..."><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i></li>
+                        <li><a href="#">Gọi Ngay <br> 0327845877</a></li>
+                    </ul>
+                </div>
+                <div class="cart">
+                    <ul>
+                        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <ul>
+                        <li><a href="sign_in.html"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="sign_in.html">Đăng Nhập </a><span> | </span><a href="sign_up.html"> Đăng Ký</a></li>
+                    </ul>
+                </div>     
+           </div>
+           <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="list_product.html">Rượu Vang <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu-lv1">
+                            <li><a href="list_product.html">Xuất Xứ</a>
+                                <ul class="sub-menu-lv2">
+                                    <li><a href="list_product.html">Vang Pháp</a></li>
+                                    <li><a href="list_product.html">Vang Ý</a></li>
+                                    <li><a href="list_product.html">Vang Mỹ</a></li>
+                                    <li><a href="list_product.html">Vang Chile</a></li>
+                                    <li><a href="list_product.html">Vang Úc</a></li>
+                                    <li><a href="list_product.html">Vang Argentina</a></li>
+                                    <li><a href="list_product.html">Vang Tây Ban Nha</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="list_product.html">Dòng Vang</a>
+                                <ul class="sub-menu-lv2">
+                                    <li><a href="list_product.html">Vang Trắng</a></li>
+                                    <li><a href="list_product.html">Vang Đỏ</a></li>
+                                    <li><a href="list_product.html">Vang Hồng</a></li>
+                                    <li><a href="list_product.html">Vang Ngọt</a></li>
+                                    <li><a href="list_product.html">Vang Chát</a></li>
+                                </ul>
+                            </li>      
+                        </ul>
+                    </li>
+                    <li><a href="list_product.html">Rượu Mạnh <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu-lv1">
+                            <li><a href="list_product.html">Rượu Chivas</a></li>
+                            <li><a href="list_product.html">Rượu Ballantine's</a></li>  
+                            <li><a href="list_product.html">Rượu Johnnie Walker</a></li>
+                            <li><a href="list_product.html">Rượu Hennessy</a></li>
+                            <li><a href="list_product.html">Rượu Remy Martin</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="list_product.html">Quà Tặng <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu-lv1">
+                            <li><a href="list_product.html">Quà Tặng Tết 2024</a></li>
+                            <li><a href="list_product.html">Túi Quà Tết</a></li>  
+                            <li><a href="list_product.html">Hộp Quà Tết Cao Cấp</a></li>
+                            <li><a href="list_product.html">Hộp Quà Rượu Sake</a></li>
+                            <li><a href="list_product.html">Hộp Trà Cao Cấp</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="about_us.html">Giới Thiệu</a></li>
+                    <li><a href="list_product.html">Tin Tức</a></li>
+                </ul>
+           </div>
+        </div>
+    </header>
+    <div class="page-main">
+        <div class="cart-content">
+            <div class="left-content">
+                <div class="title-line">
+                    <h4>Sản Phẩm</h4>
+                    <h4>Giá</h4>
+                    <h4>Số Lượng</h4>
+                    <h4>Tạm Tính</h4>
+                </div>
+                <div class="product-line">
+                    <div class="cancel">
+                        <p><i class="fa-regular fa-circle-xmark"></i></p>
+                    </div>
+                    <div class="product">
+                        <a href="product_details.html">
+                            <img src="img/wine_products/Wine_Caymus-vineyards-cabernet-sauvignon.jpg" alt="">
+                        </a>
+                        <a href="product_details.html">
+                            <p>Rượu Vang Caymus Vineyards Cabernet Sauvignon</p>
+                        </a> 
+                    </div>
+                    <div class="price">
+                        <p id="defaultPrice1">3.200.000₫</p>
+                    </div>
+                    <div class="quantity">
+                        <input type="button" onclick="totalClick(-1)" value="-">
+                        <input type="text" id="totalClicks" value="1">
+                        <input type="button" onclick="totalClick(1)" value="+">
+                    </div>
+                    <div class="provisional-price">
+                        <p id="subPrice1">3.200.000₫</p>
+                    </div>
+                    <script>
+                        const VND = new Intl.NumberFormat('vi-VN', {
+                            style: 'currency',
+                            currency: 'VND',
+                        });
+                        function totalClick(value) {
+                            let totalClicks = document.getElementById('totalClicks');
+                            let sumValue = parseInt(totalClicks.value) + value;
+                            totalClicks.value = sumValue;
+
+                            if(sumValue < 1)
+                                totalClicks.value = 1;
+
+                            let defaultPrice1 = document.getElementById('defaultPrice1');
+                            let subPrice1 = document.getElementById('subPrice1');
+                            let total = parseFloat(defaultPrice1.innerText) * 1000000 * totalClicks.value;
+                            subPrice1.innerText = VND.format(total);
+                            subPrice1.innerText;
+                        }                       
+                    </script>
+                </div>
+                <div class="product-line">
+                    <div class="cancel">
+                        <p><i class="fa-regular fa-circle-xmark"></i></p>
+                    </div>
+                    <div class="product">
+                        <a href="product_details.html">
+                            <img src="img/wine_products/Wine_Barone-Ricasoli-Chianti-DOCG.jpg" alt="">
+                        </a>
+                        <a href="product_details.html">
+                            <p>Rượu Vang Barone Ricasoli Chianti Docg</p>
+                        </a> 
+                    </div>
+                    <div class="price">
+                        <p id="defaultPrice2">1.400.000₫</p>
+                    </div>
+                    <div class="quantity">
+                        <input type="button" onclick="totalClick2(-1)" value="-">
+                        <input type="text" id="totalClicks2" value="1">
+                        <input type="button" onclick="totalClick2(1)" value="+">                       
+                    </div>
+                    <div class="provisional-price">
+                        <p id="subPrice2">1.400.000₫</p>
+                    </div>
+                    <script>
+                        function totalClick2(value) {
+                            let totalClicks2 = document.getElementById('totalClicks2');
+                            let sumValue = parseInt(totalClicks2.value) + value;
+                            totalClicks2.value = sumValue;
+
+                            if(sumValue < 1)
+                                totalClicks2.value = 1;
+                            
+                            let defaultPrice2 = document.getElementById('defaultPrice2');
+                            let subPrice2 = document.getElementById('subPrice2');
+                            let total = parseFloat(defaultPrice2.innerText) * 1000000 * totalClicks2.value;
+                            subPrice2.innerText = VND.format(total);
+                            subPrice2.innerText;
+                        }
+                    </script>
+                </div>
+                <div class="product-line">
+                    <div class="cancel">
+                        <p><i class="fa-regular fa-circle-xmark"></i></p>
+                    </div>
+                    <div class="product">
+                        <a href="product_details.html">
+                            <img src="img/wine_products/Wine_Ventisquero-reserva-cabernet-sauvignon.jpg" alt="">
+                        </a>
+                        <a href="product_details.html">
+                            <p>Rượu Vang Ventisquero Reserva Cabernet Sauvignon</p>
+                        </a> 
+                    </div>
+                    <div class="price">
+                        <p id="defaultPrice3">380.000₫</p>
+                    </div>
+                    <div class="quantity">
+                        <input type="button" onclick="totalClick3(-1)" value="-">
+                        <input type="text" id="totalClicks3" value="1">
+                        <input type="button" onclick="totalClick3(1)" value="+">                       
+                    </div>
+                    <div class="provisional-price">
+                        <p id="subPrice3">380.000₫</p>
+                    </div>
+                    <script>
+                        function totalClick3(value) {
+                            let totalClicks3 = document.getElementById('totalClicks3');
+                            let sumValue = parseInt(totalClicks3.value) + value;
+                            totalClicks3.value = sumValue;
+
+                            if(sumValue < 1)
+                                totalClicks3.value = 1;
+                            
+                            let defaultPrice3 = document.getElementById('defaultPrice3');
+                            let subPrice3 = document.getElementById('subPrice3');
+                            let total = parseFloat(defaultPrice3.innerText) * 1000 * totalClicks3.value;
+                            subPrice3.innerText = VND.format(total);
+                            subPrice3.innerText;
+                        }
+                    </script>
+                </div>
+                <div class="button-other">
+                    <a href="list_product.html">
+                        <button id="continue-view">
+                            <i class="fa-solid fa-arrow-left"></i> 
+                            Tiếp Tục Xem Sản Phẩm
+                        </button>
+                    </a>
+                    <button id="updateCart">Cập Nhật Giỏi Hàng</button>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="title-line">
+                    <h4>Cộng Giỏ Hàng</h4>
+                </div>
+                <div class="provisional-price">
+                    <p>Tạm tính: </p>
+                    <p id="totalPrice">0₫</p>
+                </div>
+                <div class="final-price">
+                    <p>Tổng: </p>
+                    <p id="finalPrice">0₫</p>
+                </div>             
+                <div class="pay-button">
+                    <button>Tiến Hành Thanh Toán</button>
+                </div>
+                <div class="sticky-sale">
+                    <p><i class="fa-solid fa-tag"></i> Phiếu Ưu Đãi</p>
+                    <input type="text" placeholder="Nhập mã ưu đãi">
+                    <input type="button" value="Áp Dụng">
+                </div>
+                <script>
+                    let updateBtn = document.getElementById('updateCart');
+                    let totalPrice = document.getElementById('totalPrice');
+                    let finalPrice = document.getElementById('finalPrice');
+                    let defaultPrice1 = document.getElementById('defaultPrice1');
+                    let defaultPrice2 = document.getElementById('defaultPrice2');
+                    let defaultPrice3 = document.getElementById('defaultPrice3');
+                    
+                    function updateCart() {
+                        let quantityProduct1 = document.getElementById('totalClicks');
+                        let quantityProduct2 = document.getElementById('totalClicks2');
+                        let quantityProduct3 = document.getElementById('totalClicks3');
+                        let subPrice1 = parseFloat(defaultPrice1.innerText) * quantityProduct1.value;
+                        let subPrice2 = parseFloat(defaultPrice2.innerText) * quantityProduct2.value;
+                        let subPrice3 = parseFloat(defaultPrice3.innerText) * quantityProduct3.value;
+
+                        let sumPrice = (subPrice1*1000000) + (subPrice2*1000000) + (subPrice3*1000);           
+                       
+                        totalPrice.innerText = VND.format(sumPrice);
+                        return VND.format(sumPrice);
+                    } 
+                    totalPrice.innerText = updateCart();  
+                    finalPrice.innerText = updateCart();     
+                    updateBtn.onclick = function() {
+                        totalPrice.innerText = updateCart();
+                        finalPrice.innerText = updateCart(); 
+                    };         
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-container-top">
+            <div class="contact">
+               <ul>
+                    <li><h2>Liên Hệ</h2></li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://goo.gl/maps/8aoXSRbB9ykoxPmg6">Địa Chỉ: <strong>Sky Wine Shop</strong> - Cầu Xéo, Tân Quý, Tân Phú, TP.HCM</a>
+                    </li>
+                    <li><i class="fa-solid fa-phone"></i>SĐT: 0327845877</li>
+                    <li><i class="fa-solid fa-envelope"></i>Email: vandaopq@gmail.com</li>
+                    <li><i class="fa-brands fa-facebook"></i>Facebook: facebook.com/vandao2909</li>
+               </ul>
+            </div>
+            <div class="support">
+                <ul>
+                    <li><h2>Hỗ Trợ</h2></li>
+                    <li>
+                        <i class="fa-solid fa-headset"></i>
+                        <a href="#">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li> 
+                        <i class="fa-solid fa-headset"></i>
+                        <a href="#">Chính sách đổi trả</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-headset"></i>
+                        <a href="#">Chính sách bảo hành</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-headset"></i>
+                        <a href="#">Điều khoản thanh toán</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="introduce">
+                <ul>
+                    <li><h2>Giới Thiệu</h2></li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-circle-info"></i>
+                        <a href="about_us.html">Giới thiệu trang web</a>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-circle-info"></i>
+                        <a href="#">Các thương hiệu nổi tiếng</a>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-circle-info"></i>
+                        <a href="#">Cơ cấu tổ chức</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-container-bottom">
+            <div class="info">
+                <p>Tuân thủ Nghị định số 185/2013/NĐ-CP của Chính phủ và luật quảng cáo số 16/2012/QH13 về kinh doanh bán hàng qua mạng. Sky Wine là trang kinh doanh và chia sẻ kiến thức về các loại rượu. Chúng tôi cam kết kinh doanh hàng chính hãng nhập khẩu 100%. Sản phẩm của chúng tôi cam đoan có chất lượng tốt nhất và đầy đủ giấy tờ liên quan, nguồn gốc xuất xứ rõ ràng. Các sản phẩm của chúng tôi có nồng độ cồn dưới 5,5% vol. Sản phẩm không phù hợp với phụ nữ mang thai và trẻ em dưới 18 tuổi.</p>
+            </div>
+            <div class="copyright">
+                <span>Copyright 2023 © <strong>2001210818 - Trần Văn Đảo</strong></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<html>
