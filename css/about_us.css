@@ -65,6 +65,7 @@
 .the-end {
     margin-top: 50px;
     height: 100px;
+    border-bottom: 1px solid black;
 }
 .the-end p {
     font-size: 20px;
@@ -74,3 +75,37 @@
     color: red;
     font-size: 20px;
 }
+/* about me */
+.page-main .about-me {
+    margin: 30px 0;
+}
+.page-main .about-me h2 {
+    margin: 30px 0px;
+    font-weight: normal;
+}
+.page-main .about-me .yourself {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-main .about-me .yourself div {
+    padding: 0 30px;
+    text-align: left;
+}
+.page-main .about-me .yourself .avt img {
+    width: 150px;
+    border-radius: 50%;
+}
+.page-main .about-me .yourself .info ul li {
+    padding-bottom: 10px;
+}
+.page-main .about-me .yourself .info ul li a {
+    color: #24292f;
+}
+.page-main .about-me .yourself .info ul li:nth-child(2) a {
+    color: #1B74E4;
+}
+.page-main .about-me .yourself .info ul li:nth-child(3) a {
+    color: #FD1D1D; 
+}
+
