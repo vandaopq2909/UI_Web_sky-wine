@@ -556,7 +556,7 @@ h3:hover {
 
     /* responsive for footer */
     .footer-container {
-       height: 850px;
+       height:650px;
        padding-top: 20px;
     }
     .footer-container .footer-container-top {
@@ -568,10 +568,10 @@ h3:hover {
         margin-top: 10px;
     }
     .footer-container .footer-container-bottom {
-        height: 250px;
+        height: auto;
     }
     .footer-container .footer-container-bottom .info {
-        height: 200px;
+        display: none;
     }
     .footer-container .footer-container-bottom .copyright {
         height: 50px;
