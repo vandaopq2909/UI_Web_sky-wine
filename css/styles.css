@@ -517,7 +517,6 @@ h3:hover {
         width: 100%;
         font-family: "Open Sans", sans-serif;
         padding-top: 10px;
-        padding-left: 10px;
         text-align: center;
     }
     .nav-menu-mobile ul li {
@@ -531,7 +530,7 @@ h3:hover {
     }
 }
 /* for mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
     /* header-main */
     .header-main .cart {
         padding: 0 10px;
@@ -561,7 +560,7 @@ h3:hover {
        padding-top: 20px;
     }
     .footer-container .footer-container-top {
-        /* flex-direction: column; */
+        flex-direction: column;
         height: 600px;
         padding: 0;
     }

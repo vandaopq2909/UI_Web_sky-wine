@@ -15,31 +15,26 @@
 <body>
     <header>
         <div class="container">
-           <div class="header-main">
+            <div class="header-main">
                 <div class="header-logo">
                     <a href="index.html"><img src="img/logos/header_logo.png" alt="header_logo"></a>
-                </div>                
+                </div>
                 <div class="search-bar">
-                    <ul>
-                        <li><input type="text" placeholder="Nhập loại rượu bạn cần tìm..."><i class="fa-solid fa-magnifying-glass"></i></li>
-                    </ul>
+                    <input type="text" placeholder="Tìm kiếm...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="contact">
-                    <ul>
-                        <li><i class="fa-solid fa-phone"></i></li>
-                        <li><a href="#">Gọi Ngay <br> 0327845877</a></li>
-                    </ul>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="#">Gọi Ngay <br> 0327845877</a>                  
                 </div>
                 <div class="cart">
-                    <ul>
-                        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a></li>
-                    </ul>
+                    <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng
+                    </a>
                 </div>
                 <div class="login">
-                    <ul>
-                        <li><a href="sign_in.html"><i class="fa-solid fa-user"></i></a></li>
-                        <li><a href="sign_in.html">Đăng Nhập </a><span> | </span><a href="sign_up.html"> Đăng Ký</a></li>
-                    </ul>
+                    <a href="sign_in.html"><i class="fa-solid fa-user"></i></a>
+                    <a href="sign_in.html">Đăng Nhập </a><span>&nbsp|&nbsp</span><a href="sign_up.html"> Đăng Ký</a>
                 </div>     
            </div>
            <div class="nav-menu">
@@ -91,6 +86,63 @@
                     <li><a href="list_product.html">Tin Tức</a></li>
                 </ul>
            </div>
+           <div class="menu-toggle">
+            <span id="toggle-btn" onclick="OpenDropDownMenu(this)"><i class="fa-solid fa-bars"></i></span>
+       </div>
+       <div class="nav-menu-mobile" id="menu-for-mobile" style="display: none;">
+            <ul class="category-product">
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="index.html"
+                    style="font-weight: bold; font-size: large;"
+                    >Trang Chủ</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-wine-glass"></i>
+                    <a href="list_product.html"
+                    style="font-weight: bold; font-size: large;"
+                    >Rượu Vang</a>                       
+                </li>
+                <li>
+                    <i class="fa-solid fa-wine-bottle"></i>
+                    <a href="list_product.html" 
+                    style="font-weight: bold; font-size: large;"
+                    >Rượu Mạnh</a> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-gift"></i>
+                    <a href="list_product.html"
+                    style="font-weight: bold; font-size: large;"
+                    >Quà Tặng</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <a href="about_us.html"
+                    style="font-weight: bold; font-size: large;"
+                    >Giới Thiệu</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="list_product.html"
+                    style="font-weight: bold; font-size: large;"
+                    >Tin Tức</a>
+                </li>
+            </ul>
+   </div>
+       <script>
+        let navMenuMobile = document.getElementById('menu-for-mobile');
+        let menuToggle = document.querySelector('.menu-toggle');
+        function OpenDropDownMenu(toggleBtn) {
+            if (navMenuMobile.style.display === "none") {  
+                navMenuMobile.style.display = "block";                      
+                toggleBtn.innerHTML = '<i class="fa-regular fa-circle-xmark"></i>';
+                
+            } else {
+                navMenuMobile.style.display = "none";                      
+                toggleBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            }
+        }
+       </script>
         </div>
     </header>
     <div class="page-main">
