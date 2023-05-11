@@ -108,3 +108,66 @@
 .page-main .about-me .yourself .info ul li:nth-child(3) a {
     color: #FD1D1D; 
 }
+
+/* responsive for mobile */
+@media screen and (max-width: 420px) {
+    .page-main .welcome {
+        text-align: center;
+    }
+    .page-main .welcome h1 {
+        font-size: 40px;
+        margin: 30px 50px;     
+    }
+    .page-main .welcome p {
+        margin: 0 20px;
+    }
+
+    /* feature content */
+    .feature-container {
+        margin: 0px 20px;
+    }
+    .feature-container .feature {
+        flex-direction: column;
+    }
+    .feature-container .feature img {
+        width: 90%;
+        padding: 0;
+        align-self: center;
+    }
+    .feature-container .feature .feature-content p {
+        margin: 20px 10px;
+    }
+    .page-main .the-end {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .page-main .the-end p {
+        margin: 5px 20px;
+    }
+    .page-main .about-me .yourself {
+        flex-direction: column;
+    }
+    .page-main .about-me .yourself .avt {
+        margin-bottom: 20px;
+    }
+    .page-main .about-me .yourself .info {
+        text-align: center;
+    }
+    .page-main .about-me .yourself .info:nth-child(2) {
+        display: none;
+    }
+    .page-main .about-me .yourself .info:last-child {
+        padding: 0;
+        margin-top: 20px;
+    }
+    .page-main .about-me .yourself .info:last-child ul {
+        display: flex;
+    }
+    .page-main .about-me .yourself .info:last-child ul li {
+        margin: 0 10px;
+    }
+    .page-main .about-me .yourself .info:last-child ul li:first-child {
+        display: none;
+    }
+}
