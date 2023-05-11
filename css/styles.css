@@ -557,12 +557,12 @@ h3:hover {
     /* responsive for footer */
     .footer-container {
        height:650px;
-       padding-top: 20px;
     }
     .footer-container .footer-container-top {
         flex-direction: column;
         height: 600px;
         padding: 0;
+        padding-top: 10px;
     }
     .footer-container .footer-container-top div {
         margin-top: 10px;

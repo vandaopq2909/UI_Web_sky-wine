@@ -47,7 +47,7 @@
 .cart-content .left-content .product-line div {
     text-align: center;
 }
-.cart-content .left-content .product-line .cancel p {
+.cart-content .left-content .product-line  p p {
     color: gray;
     font-size: 30px;
     padding-right: 2px;
@@ -235,4 +235,84 @@
 }
 .cart-content .right-content .sticky-sale input[type="button"]:hover {
     background-color: #d5d0d0;
+}
+
+/*------------------------- Responsive -------------------------*/
+/* for mobile */
+@media screen and (max-width: 420px) {
+    .cart-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* left content */
+    .cart-content .left-content {
+        padding-right: 0;
+        border: none;
+        margin-bottom: 0;
+    }
+    .cart-content .left-content .title-line h4:first-child {
+        margin-left: 15px;
+    }
+    .cart-content .left-content .title-line h4:last-child {
+        display: none;
+    }
+    .cart-content .left-content .product-line .cancel p {
+        font-size: 20px;
+        margin-bottom: 70px;
+        margin-left: 5px;
+    }
+    .cart-content .left-content .product-line .provisional-price {
+        display: none;
+    }
+    .cart-content .left-content .button-other {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart-content .left-content .button-other a {
+        margin-bottom: 20px;
+    }
+    .cart-content .left-content .button-other button {
+        margin: 0;
+    }
+    /* right content */
+    .cart-content .right-content {
+        margin-left: 0;
+    }
+    .cart-content .right-content .title-line h4 {
+        margin: 0;
+        text-align: center;
+    }
+    .cart-content .right-content div p:first-child {
+        margin-left: 20px;
+    }
+    .cart-content .right-content div p:last-child {
+        margin-right: 20px;
+    }
+    .cart-content .right-content .pay-button {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .cart-content .right-content .pay-button button {
+        width: 80%;
+        height: 50px;
+        border-radius: 19px;
+    }
+    .cart-content .right-content .sticky-sale {
+        min-height: 200px;
+    }
+    .cart-content .right-content .sticky-sale p {
+        margin: 0 !important;
+    }
+    .cart-content .right-content .sticky-sale p i {
+        margin-left: 20px;
+    }
+    .cart-content .right-content .sticky-sale input[type="text"] {
+        margin: 20px 0;
+    }
+    .cart-content .right-content .sticky-sale input[type="button"] {
+        width: 80%;
+        align-self: center;
+    }
 }
