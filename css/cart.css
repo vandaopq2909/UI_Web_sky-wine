@@ -262,6 +262,9 @@
         margin-bottom: 70px;
         margin-left: 5px;
     }
+    .cart-content .left-content .product-line .product {
+        min-width: 155px;
+    }
     .cart-content .left-content .product-line .provisional-price {
         display: none;
     }
