@@ -257,6 +257,9 @@
     .cart-content .left-content .title-line h4:last-child {
         display: none;
     }
+    .cart-content .left-content .product-line {
+        padding: 5px;
+    }
     .cart-content .left-content .product-line .cancel p {
         font-size: 20px;
         margin-bottom: 70px;
@@ -312,10 +315,11 @@
         margin-left: 20px;
     }
     .cart-content .right-content .sticky-sale input[type="text"] {
-        margin: 20px 0;
+        margin: 30px 40px;
     }
     .cart-content .right-content .sticky-sale input[type="button"] {
         width: 80%;
         align-self: center;
+        margin-top: 0;
     }
 }
