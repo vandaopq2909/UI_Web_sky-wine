@@ -151,9 +151,6 @@
     .page-main .about-me .yourself .avt {
         margin-bottom: 20px;
     }
-    .page-main .about-me .yourself .info {
-        text-align: center;
-    }
     .page-main .about-me .yourself .info:nth-child(2) {
         display: none;
     }
