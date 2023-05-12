@@ -100,3 +100,41 @@
     color: black;
     font-weight: bold;
 }
+
+@media screen and (max-width: 420px) {
+    .page-main .info-content {
+        display: none;
+    }
+    .page-main .main-content {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .page-main .main-content .left-content .category-product {
+        display: none;
+    }
+    .left-content h2 { 
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .left-content .category-for-mobile {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+    .left-content .category-for-mobile label, select {
+        font-size: 20px;
+    }
+    .left-content .category-for-mobile label {
+        margin-left: 20px;
+    }
+    .left-content .category-for-mobile select {
+        width: 50%;
+        height: 30px;
+        text-align: center;
+    }
+    .headline {
+        margin-top: 20px;
+    }
+    .headline h3 { 
+        padding: 20px 30px;
+    }
+}
