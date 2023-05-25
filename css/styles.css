@@ -12,6 +12,7 @@ a {
 ul {
     list-style: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
 /*------------header------------*/
 header {
     position: sticky;
@@ -94,12 +95,10 @@ header {
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
-}
-.header-main .login {
     text-align: center;
 }
 .header-main .login a:nth-child(1) {
-    padding-right: 30px;
+    padding-left: 10px;
 }
 .header-main .login a:nth-child(1) i {
     color: white;
@@ -223,41 +222,56 @@ header {
     z-index: 9;
 }
 /*----------------------home-banner-----------------------*/
-.home-banner {
-    overflow: hidden;
-}
-.home-banner .slider {
+.slideshow-container {
+    max-width: 100%;
     position: relative;
-    width: 500%;
-    left: 0;
-    animation: 15s home-banner infinite;
+    margin: auto;
 }
-.slider img {
-    float: left;
-    width: 20%;
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 56px;
+    padding: 16px;
+    border-radius: 50%;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    text-align: center;
+}
+.next {
+    right: 0;
+    border-radius: 50%;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
 
-@keyframes home-banner {
-    0% {
-        left: 0%;
-    }
-    30% {
-        left: 0%;
-    }
-    35% {
-        left: -100%;
-    }
-    65% {
-        left: -100%;
-    }
-    70% {
-        left: -200%;
-    }
-    100% {
-        left: -200%;
-    }
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 0 2px 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
 /*-----------------------slide-products-----------------------*/
 .slide-products {
     font-family: 'Open Sans', sans-serif;
@@ -555,13 +569,12 @@ h3:hover {
         font-size: 0;
     }
     .header-main .login a:nth-child(1) {
-        padding-right: 10px;
+        padding-right: 0;
 
     }
-    .header-main .login a:nth-child(2), .login > span, a:nth-child(4) {
+    .header-main .login .login-group {
         display: none;
     }
-
     .nav-menu-mobile {
         width: 100%;
     }
@@ -569,7 +582,11 @@ h3:hover {
     .products li {
         flex-basis: 50%;
     }
-
+    /* responsive for size dot(home-banner/slide-how) */
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
     /* responsive for footer */
     .footer-container {
        height:650px;
