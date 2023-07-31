@@ -155,21 +155,25 @@
                 <h1 class="form-heading">Đăng Ký</h1>
                 <div class="form-group">
                     <i class="fa-regular fa-user"></i>
-                    <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                    <input type="text" class="form-input" id="input-username" placeholder="Tên tài khoản">
                 </div>
+                <small style="color: red;" id="username-error"></small>
                 <div class="form-group">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="text" class="form-input" placeholder="Địa chỉ email">
+                    <input type="text" class="form-input" id="input-email" placeholder="Địa chỉ email">
                 </div>
+                <small style="color: red;" id="email-error"></small>
                 <div class="form-group">
                     <i class="fa-solid fa-key"></i>
-                    <input type="password" class="form-input" placeholder="Mật khẩu">
+                    <input type="password" class="form-input" id="input-password" placeholder="Mật khẩu">
                 </div>
+                <small style="color: red;" id="password-error"></small>
                 <div class="form-group">
                     <i class="fa-solid fa-key"></i>
-                    <input type="password" class="form-input" placeholder="Nhập lại mật khẩu">
+                    <input type="password" class="form-input" id="input-confirm-password" placeholder="Nhập lại mật khẩu">
                 </div>
-                <input type="submit" value="Đăng ký" class="form-submit">
+                <small style="color: red;" id="confirm-password-error"></small>
+                <input type="button" value="Đăng ký" class="form-submit" id="input-submit">
                 <div class="login-other">
                     <button id="login-gg">
                         <a href="#"><img src="img/logos/logo_google.png" alt="">
@@ -186,6 +190,81 @@
                     <span><a href="sign_in.html" id="sign-up">Đã có tài khoản? Đăng nhập</a> | <a href="index.html" id="forget-password">Về trang chủ?</a></span>
                 </div>    
             </form>
+            <script>   
+                let username = document.getElementById('input-username');             
+                let email = document.getElementById('input-email');
+                let password = document.getElementById('input-password');
+                let confirmPassword = document.getElementById('input-confirm-password');
+                let submit = document.getElementById('input-submit');
+                let usernameErr = document.getElementById('username-error');
+                let emailErr = document.getElementById('email-error');
+                let passwordErr = document.getElementById('password-error');
+                let confirmPasswordErr = document.getElementById('confirm-password-error');
+
+                
+                submit.onclick = function() {
+                    KiemTra();
+                }
+
+                function KiemTra() {
+                    //check username  
+                    let isUsernameErr = true;    
+                    if (!username.value)
+                        usernameErr.innerText = 'Tên tài khoản không được để trống!';
+                    else if (username.value.toString().length <= 2) {
+                        usernameErr.innerText = 'Tên tài khoản phải dài hơn 2 kí tự!';
+                    }
+                    else {
+                        isEmailErr = false;    
+                        emailErr.innerText = '';
+                    }
+
+                    //check email  
+                    let isEmailErr = true;    
+                    if (!email.value)
+                        emailErr.innerText = 'Email không được để trống!';
+                    else if (email.value.toString().length <= 10) {
+                        emailErr.innerText = 'Email phải dài hơn 10 kí tự!';
+                    }
+                    else if (email.value.toString().endsWith('@gmail.com') == false) {
+                        emailErr.innerText = 'Email phải theo dạng example@email.com!';
+                    }
+                    else {
+                        isEmailErr = false;    
+                        emailErr.innerText = '';
+                    }
+
+                    //check password
+                    let isPasswordErr = true;
+                    if (!password.value)
+                        passwordErr.innerText = 'Mật khẩu không được để trống!';
+                    else if (password.value.toString().length <= 8) {
+                        passwordErr.innerText = 'Mật khẩu phải dài hơn 8 kí tự!';
+                    }
+                    else {
+                        isPasswordErr = false;
+                        passwordErr.innerText = '';
+                    }
+
+                    //check confirm password
+                    let isConfirmPasswordErr = true;
+                    if (!confirmPassword.value)
+                        confirmPasswordErr.innerText = 'Mật khẩu không được để trống!';
+                    else if (password.value.toString().length <= 8) {
+                        confirmPasswordErr.innerText = 'Mật khẩu phải dài hơn 8 kí tự!';
+                    }
+                    else if (password.value.toString() != confirmPassword.value.toString()) {
+                        confirmPasswordErr.innerText = 'Mật khẩu không không khớp!';
+                    }
+                    else {
+                        isConfirmPassword = false;
+                        confirmPasswordErr.innerText = '';
+                    }
+
+                    //if (!isEmailErr && !isPasswordErr)
+                       // window.location = 'index.html';
+                }
+            </script>
         </div>
     </main>
     <footer>
