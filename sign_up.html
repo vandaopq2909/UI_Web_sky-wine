@@ -215,8 +215,8 @@
                         usernameErr.innerText = 'Tên tài khoản phải dài hơn 2 kí tự!';
                     }
                     else {
-                        isEmailErr = false;    
-                        emailErr.innerText = '';
+                        isUsernameErr = false;    
+                        usernameErr.innerText = '';
                     }
 
                     //check email  
@@ -257,12 +257,12 @@
                         confirmPasswordErr.innerText = 'Mật khẩu không không khớp!';
                     }
                     else {
-                        isConfirmPassword = false;
+                        isConfirmPasswordErr = false;
                         confirmPasswordErr.innerText = '';
                     }
 
-                    //if (!isEmailErr && !isPasswordErr)
-                       // window.location = 'index.html';
+                    if (!isUsernameErr && !isEmailErr && !isPasswordErr && !isConfirmPasswordErr)
+                        window.location = 'index.html';
                 }
             </script>
         </div>
